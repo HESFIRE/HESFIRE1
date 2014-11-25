@@ -66,7 +66,7 @@ def savesourcode(outpath,outfolder):
 		print 'Expname: ' + outfolder
 	try:
 		shutil.copy('./'+os.path.basename(__file__), outpath+'SourceCodeHESFIRE.py')
-		shutil.copy('./'+'HESfire_params.xls', outpath+'SourceParameters.xls')
+		shutil.copy('./'+'HESFIRE_params.xls', outpath+'SourceParameters.xls')
 	except:
 		print "WARNING: could not save source code file"
 		print oupath
@@ -94,7 +94,7 @@ def randparam(a,b,paramtype):
 ##########################################################################################
 ##################################### 1. User inputs #####################################
 ##########################################################################################
-parameterfile = 'HESfire_params.xls'
+parameterfile = 'HESFIRE_params.xls'
 wb = open_workbook(filename=parameterfile)
 sh = wb.sheet_by_index(0)
 paramnames = [str(sh.col_values(0)[i+1]) for i in range(len(sh.col_values(0))-1)]
