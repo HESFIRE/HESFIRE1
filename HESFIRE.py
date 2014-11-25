@@ -1,7 +1,10 @@
 #!/usr/local/bin/Python
-### Fire model
+### HESFIRE model
 
 # Developed by Yannick Le Page et al. (REF) - Contact: Yannick.LePage@pnnl.gov
+# See paper in discussion:
+# Le Page, Y., Morton, D., Bond-Lamberty, B., Pereira, J. M. C. and Hurtt, G.: HESFIRE: an explicit fire model for projections in the coupled Human–Earth System, Biogeosciences Discussions, 11(7), 10779–10826, 2014.
+
 import os
 import csv
 from numpy import *
